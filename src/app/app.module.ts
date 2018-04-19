@@ -10,12 +10,14 @@ import { MembersComponent } from './members/members.component';
 import { SimpleFormComponent } from './simple-form/simple-form.component';
 // 服务
 import { MailService } from './mail.service';
+import { DemoComponent } from './demo/demo.component';
 
 export const ROUTES: Routes = [
 	{path: '', pathMatch: 'full', redirectTo: 'user'},
 	{path: 'user', component: UserComponent},
 	{path: 'members', component: MembersComponent},
-  {path: 'simple', component: SimpleFormComponent}
+  {path: 'simple', component: SimpleFormComponent},
+  {path: 'demo', component: DemoComponent}
 ];
 
 @NgModule({
@@ -23,7 +25,8 @@ export const ROUTES: Routes = [
     AppComponent,
     UserComponent,
     MembersComponent,
-    SimpleFormComponent
+    SimpleFormComponent,
+    DemoComponent
   ],
   imports: [
     BrowserModule,
